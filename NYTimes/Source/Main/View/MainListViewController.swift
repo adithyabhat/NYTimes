@@ -58,7 +58,10 @@ class MainListViewController: UIViewController {
         viewModel.onError.subscribe(onNext: { error in
             SwiftMessages.show {
                 let view = MessageView.viewFromNib(layout: .cardView)
-                view.titleLabel?.text = (error as? AFError)?.localizedDescription ?? "Error loading"
+                view.configureTheme(.error)
+                view.configureContent(title: "Error",
+                                      body: (error as? AFError)?.localizedDescription ?? "Error loading")
+                view.button?.isHidden = true
                 return view
             }
         }).disposed(by: disposeBag)
@@ -67,12 +70,18 @@ class MainListViewController: UIViewController {
     private func makeActivityIndicatorView() -> NVActivityIndicatorView {
         let frame = CGRect(origin: .zero, size: CGSize(width: 60, height: 60))
         let view = NVActivityIndicatorView(frame: frame,
-                                           type: .circleStrokeSpin,
+                                           type: .ballSpinFadeLoader,
                                            color: .darkGray)
         let viewBounds = self.view.bounds
         view.center = CGPoint(x: viewBounds.width / 2, y: viewBounds.height / 2)
         self.view.addSubview(view)
         return view
+    }
+    
+    private func openInWebpage(article: Article) {
+        let webViewController = WebViewController(title: article.title,
+                                                  url: article.url)
+        self.navigationController?.pushViewController(webViewController, animated: true)
     }
 }
 
@@ -95,6 +104,7 @@ extension MainListViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        openInWebpage(article: viewModel.item(for: indexPath.row))
     }
     
 }

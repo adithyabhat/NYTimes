@@ -15,6 +15,7 @@
 		CA2276E52792E7130054A00F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276E42792E7130054A00F /* APIManager.swift */; };
 		CA2276E62792E71D0054A00F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276E42792E7130054A00F /* APIManager.swift */; };
 		CA2276EB279308E50054A00F /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276EA279308E50054A00F /* RoundedImageView.swift */; };
+		CA636192279350CB006CCBD9 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA636191279350CB006CCBD9 /* WebViewController.swift */; };
 		CA76002F27915FC60029DF27 /* MainListvVewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76002E27915FC60029DF27 /* MainListvVewModel.swift */; };
 		CA76003027915FC60029DF27 /* MainListvVewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76002E27915FC60029DF27 /* MainListvVewModel.swift */; };
 		CA76003227917A270029DF27 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76003127917A270029DF27 /* MainListTableViewCell.swift */; };
@@ -64,6 +65,7 @@
 		CA2276E22792BD470054A00F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		CA2276E42792E7130054A00F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CA2276EA279308E50054A00F /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		CA636191279350CB006CCBD9 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		CA76002E27915FC60029DF27 /* MainListvVewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListvVewModel.swift; sourceTree = "<group>"; };
 		CA76003127917A270029DF27 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
 		CA7600332791E85E0029DF27 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2276EA279308E50054A00F /* RoundedImageView.swift */,
+				CA636191279350CB006CCBD9 /* WebViewController.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				CA2276E32792BD470054A00F /* Endpoint.swift in Sources */,
 				CA7600342791E85E0029DF27 /* Article.swift in Sources */,
 				CAE9B43F27908839003F5DA3 /* AppDelegate.swift in Sources */,
+				CA636192279350CB006CCBD9 /* WebViewController.swift in Sources */,
 				CA2276EB279308E50054A00F /* RoundedImageView.swift in Sources */,
 				CAE9B44127908839003F5DA3 /* SceneDelegate.swift in Sources */,
 				CA2276DE2792B8F20054A00F /* API.swift in Sources */,
