@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (5.5.0)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
@@ -15,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage
   - NVActivityIndicatorView
   - RxCocoa
   - RxSwift
@@ -23,6 +26,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - NVActivityIndicatorView
     - RxCocoa
     - RxRelay
@@ -31,12 +35,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
 
-PODFILE CHECKSUM: a39d1f77b88aad3de6c8d0b5ef2c66feb8f790ae
+PODFILE CHECKSUM: 9c7cffddd6c002315bf31172b5d070b234b02289
 
 COCOAPODS: 1.11.2

@@ -12,11 +12,13 @@ class Article {
     var byLine: String
     var publishDate: Date
     var url: String
+    var imageURL: String
     
-    init(title: String, byLine: String, publishDate: Date, url: String) {
+    init(title: String, byLine: String, publishDate: Date, url: String, imageURL: String) {
         self.title = title
         self.byLine = byLine
         self.publishDate = publishDate
         self.url = url
+        self.imageURL = imageURL
     }
 }

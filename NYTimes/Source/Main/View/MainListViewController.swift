@@ -9,12 +9,14 @@ import UIKit
 import RxSwift
 import SwiftMessages
 import Alamofire
+import NVActivityIndicatorView
 
 class MainListViewController: UIViewController {
 
     //MARK: - Properties
     
     private let disposeBag = DisposeBag()
+    private lazy var activityIndicatorView: NVActivityIndicatorView = makeActivityIndicatorView()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -47,6 +49,12 @@ class MainListViewController: UIViewController {
             self?.tableView.reloadData()
         }).disposed(by: disposeBag)
 
+        viewModel.loadingIndicator.subscribe(onNext: { [weak self] show in
+            show ?
+            self?.activityIndicatorView.startAnimating() :
+            self?.activityIndicatorView.stopAnimating()
+        }).disposed(by: disposeBag)
+        
         viewModel.onError.subscribe(onNext: { error in
             SwiftMessages.show {
                 let view = MessageView.viewFromNib(layout: .cardView)
@@ -54,6 +62,17 @@ class MainListViewController: UIViewController {
                 return view
             }
         }).disposed(by: disposeBag)
+    }
+    
+    private func makeActivityIndicatorView() -> NVActivityIndicatorView {
+        let frame = CGRect(origin: .zero, size: CGSize(width: 60, height: 60))
+        let view = NVActivityIndicatorView(frame: frame,
+                                           type: .circleStrokeSpin,
+                                           color: .darkGray)
+        let viewBounds = self.view.bounds
+        view.center = CGPoint(x: viewBounds.width / 2, y: viewBounds.height / 2)
+        self.view.addSubview(view)
+        return view
     }
 }
 
@@ -75,7 +94,7 @@ extension MainListViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

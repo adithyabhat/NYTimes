@@ -3,6 +3,7 @@ target 'NYTimes' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SwiftMessages'

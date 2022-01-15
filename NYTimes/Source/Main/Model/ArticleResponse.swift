@@ -44,6 +44,10 @@ struct Result: Codable {
         case media
         case etaID = "eta_id"
     }
+    
+    func thumbnailImageURLString() -> String {
+        return media.first?.mediaMetadata.first(where: { $0.format == "Standard Thumbnail" })?.url ?? ""
+    }
 }
 
 // MARK: - Media
