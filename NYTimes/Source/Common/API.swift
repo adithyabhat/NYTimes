@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct API {
+public struct API {
     
-    static var baseURL: URL = AppConfig.current.server.host.appendingPathComponent("svc")
+    static var baseURL: URL {
+        let apiDetails = AppConfig.current.server
+        return apiDetails.host.appendingPathComponent(apiDetails.suffix)
+    }
     
 }
 

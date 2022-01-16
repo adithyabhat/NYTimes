@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension API {
+public extension API {
     
     enum Endpoint: String {
         case mostPopular = "mostpopular/v2/emailed"
