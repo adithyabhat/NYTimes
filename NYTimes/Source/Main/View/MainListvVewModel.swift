@@ -52,9 +52,7 @@ class MainListViewModel {
         return articles[index]
     }
     
-    //MARK: - Private helper methods
-
-    private func articles(from respose: ArticleResponse) -> [Article] {
+    public func articles(from respose: ArticleResponse) -> [Article] {
         var articles = [Article]()
         for result in respose.results {
             let publishDate = dateFormatter.date(from: result.publishedDate) ?? Date()
@@ -68,6 +66,8 @@ class MainListViewModel {
         }
         return articles
     }
+    
+    //MARK: - Private helper method
     
     private func makeDateFormatter() -> DateFormatter {
         let formatter = DateFormatter()

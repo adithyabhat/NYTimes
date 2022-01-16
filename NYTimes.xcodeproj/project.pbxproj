@@ -15,6 +15,12 @@
 		CA0782D52794428B008C95D9 /* AppConfig+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0782D42794428B008C95D9 /* AppConfig+Server.swift */; };
 		CA0782D7279442C3008C95D9 /* AppConfig+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0782D6279442C3008C95D9 /* AppConfig+Environment.swift */; };
 		CA0782D8279442C3008C95D9 /* AppConfig+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0782D6279442C3008C95D9 /* AppConfig+Environment.swift */; };
+		CA0782DD27944826008C95D9 /* AppConfig+Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0782D42794428B008C95D9 /* AppConfig+Server.swift */; };
+		CA0782DE2794484F008C95D9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7600332791E85E0029DF27 /* Article.swift */; };
+		CA0782DF27944857008C95D9 /* ArticleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7600352791E9070029DF27 /* ArticleResponse.swift */; };
+		CA0782E027944879008C95D9 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276E22792BD470054A00F /* Endpoint.swift */; };
+		CA0782E42794666B008C95D9 /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0782E32794666B008C95D9 /* APITest.swift */; };
+		CA0782E6279468DD008C95D9 /* ViewModelDataSetupTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0782E5279468DD008C95D9 /* ViewModelDataSetupTest.swift */; };
 		CA2276DC2792AFC60054A00F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276DB2792AFC60054A00F /* AppConfig.swift */; };
 		CA2276DE2792B8F20054A00F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276DD2792B8F20054A00F /* API.swift */; };
 		CA2276E32792BD470054A00F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2276E22792BD470054A00F /* Endpoint.swift */; };
@@ -33,9 +39,8 @@
 		CAE9B44627908839003F5DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE9B44427908839003F5DA3 /* Main.storyboard */; };
 		CAE9B4482790883C003F5DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE9B4472790883C003F5DA3 /* Assets.xcassets */; };
 		CAE9B44B2790883C003F5DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE9B4492790883C003F5DA3 /* LaunchScreen.storyboard */; };
-		CAE9B4562790883D003F5DA3 /* NYTimesAPIConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9B4552790883D003F5DA3 /* NYTimesAPIConfigTests.swift */; };
+		CAE9B4562790883D003F5DA3 /* AppConfigTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9B4552790883D003F5DA3 /* AppConfigTest.swift */; };
 		CAE9B4602790883D003F5DA3 /* NYTimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9B45F2790883D003F5DA3 /* NYTimesUITests.swift */; };
-		CAE9B4622790883D003F5DA3 /* NYTimesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9B4612790883D003F5DA3 /* NYTimesUITestsLaunchTests.swift */; };
 		D2910CF28457F7E4953F9876 /* Pods_NYTimes_NYTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257A4BDCEF7FEB473F552F56 /* Pods_NYTimes_NYTimesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +74,8 @@
 		CA0782D12794308F008C95D9 /* AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppConfig.plist; sourceTree = "<group>"; };
 		CA0782D42794428B008C95D9 /* AppConfig+Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConfig+Server.swift"; sourceTree = "<group>"; };
 		CA0782D6279442C3008C95D9 /* AppConfig+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppConfig+Environment.swift"; sourceTree = "<group>"; };
+		CA0782E32794666B008C95D9 /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
+		CA0782E5279468DD008C95D9 /* ViewModelDataSetupTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDataSetupTest.swift; sourceTree = "<group>"; };
 		CA2276DB2792AFC60054A00F /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		CA2276DD2792B8F20054A00F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		CA2276E22792BD470054A00F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -88,10 +95,9 @@
 		CAE9B44A2790883C003F5DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAE9B44C2790883C003F5DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAE9B4512790883D003F5DA3 /* NYTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAE9B4552790883D003F5DA3 /* NYTimesAPIConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesAPIConfigTests.swift; sourceTree = "<group>"; };
+		CAE9B4552790883D003F5DA3 /* AppConfigTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigTest.swift; sourceTree = "<group>"; };
 		CAE9B45B2790883D003F5DA3 /* NYTimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE9B45F2790883D003F5DA3 /* NYTimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesUITests.swift; sourceTree = "<group>"; };
-		CAE9B4612790883D003F5DA3 /* NYTimesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,7 +259,9 @@
 		CAE9B4542790883D003F5DA3 /* NYTimesTests */ = {
 			isa = PBXGroup;
 			children = (
-				CAE9B4552790883D003F5DA3 /* NYTimesAPIConfigTests.swift */,
+				CAE9B4552790883D003F5DA3 /* AppConfigTest.swift */,
+				CA0782E32794666B008C95D9 /* APITest.swift */,
+				CA0782E5279468DD008C95D9 /* ViewModelDataSetupTest.swift */,
 			);
 			path = NYTimesTests;
 			sourceTree = "<group>";
@@ -262,7 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				CAE9B45F2790883D003F5DA3 /* NYTimesUITests.swift */,
-				CAE9B4612790883D003F5DA3 /* NYTimesUITestsLaunchTests.swift */,
 			);
 			path = NYTimesUITests;
 			sourceTree = "<group>";
@@ -530,9 +537,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2276E62792E71D0054A00F /* APIManager.swift in Sources */,
+				CA0782DD27944826008C95D9 /* AppConfig+Server.swift in Sources */,
+				CA0782E6279468DD008C95D9 /* ViewModelDataSetupTest.swift in Sources */,
+				CA0782E42794666B008C95D9 /* APITest.swift in Sources */,
 				CA0782CF27940BD7008C95D9 /* AppConfig.swift in Sources */,
 				CA76003027915FC60029DF27 /* MainListvVewModel.swift in Sources */,
-				CAE9B4562790883D003F5DA3 /* NYTimesAPIConfigTests.swift in Sources */,
+				CA0782E027944879008C95D9 /* Endpoint.swift in Sources */,
+				CA0782DE2794484F008C95D9 /* Article.swift in Sources */,
+				CA0782DF27944857008C95D9 /* ArticleResponse.swift in Sources */,
+				CAE9B4562790883D003F5DA3 /* AppConfigTest.swift in Sources */,
 				CA0782D027940BDC008C95D9 /* API.swift in Sources */,
 				CA0782D8279442C3008C95D9 /* AppConfig+Environment.swift in Sources */,
 			);
@@ -542,7 +555,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE9B4622790883D003F5DA3 /* NYTimesUITestsLaunchTests.swift in Sources */,
 				CAE9B4602790883D003F5DA3 /* NYTimesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
