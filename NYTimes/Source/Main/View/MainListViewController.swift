@@ -45,16 +45,19 @@ class MainListViewController: UIViewController {
     }
 
     private func setupViewModelBindings() {
+        //Subscribe to reload data
         viewModel.reloadData.subscribe(onNext: { [weak self] in
             self?.tableView.reloadData()
         }).disposed(by: disposeBag)
 
+        //Subscribe to showing loading indicator true / false
         viewModel.loadingIndicator.subscribe(onNext: { [weak self] show in
             show ?
             self?.activityIndicatorView.startAnimating() :
             self?.activityIndicatorView.stopAnimating()
         }).disposed(by: disposeBag)
         
+        //Subscribe to error display
         viewModel.onError.subscribe(onNext: { error in
             SwiftMessages.show {
                 let view = MessageView.viewFromNib(layout: .cardView)

@@ -37,6 +37,8 @@ class MainListViewModel {
         }
     }
     
+    //MARK : Table view helper methods
+    
     func numberOfSections() -> Int {
         return 1
     }
@@ -51,6 +53,8 @@ class MainListViewModel {
         }
         return articles[index]
     }
+    
+    //MARK: Model creation method
     
     public func articles(from respose: ArticleResponse) -> [Article] {
         var articles = [Article]()
